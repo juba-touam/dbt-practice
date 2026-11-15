@@ -7,3 +7,10 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: mart_sales_by_product
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
