@@ -29,3 +29,7 @@ models:
   dbt_practice:
     staging:
       +materialized: view
+    marts:
+      +materialized: table
+      +database: GOLD_DB
+      +schema: MARTS
