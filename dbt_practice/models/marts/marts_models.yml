@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: fct_purchases
+    columns:
+      - name: purchase_id
+        tests:
+          - unique
+          - not_null
