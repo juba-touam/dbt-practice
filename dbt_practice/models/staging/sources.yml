@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: BRONZE_DB
+    schema: RAW
+    tables:
+      - name: users
+      - name: products
+      - name: purchases
