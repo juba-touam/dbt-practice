@@ -6,6 +6,12 @@ on:
   push:
     branches: [main]
     paths: ["dbt_practice/**"]
+  schedule:
+    # 00:30 Europe/Paris. GitHub Actions cron est toujours en UTC et ne suit
+    # pas le changement d'heure : 23:30 UTC = 00:30 en hiver (CET, UTC+1),
+    # 01:30 en ete (CEST, UTC+2) -- decalage d'1h a ajuster si besoin selon
+    # la periode de l'annee.
+    - cron: "30 23 * * *"
 
 env:
   DBT_PROFILES_DIR: ${{ github.workspace }}/ci
