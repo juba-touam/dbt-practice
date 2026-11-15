@@ -1,0 +1,9 @@
+[sqlfluff]
+templater = dbt
+dialect = snowflake
+
+[sqlfluff:templater:dbt]
+project_dir = dbt_practice
+profiles_dir = ci
+profile = dbt_practice
+target = ci

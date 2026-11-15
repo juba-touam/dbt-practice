@@ -3,6 +3,7 @@ logs/
 dbt_practice/target/
 dbt_practice/dbt_packages/
 dbt_practice/logs/
-profiles.yml
+/profiles.yml
+dbt_practice/profiles.yml
 __pycache__/
 *.pyc
